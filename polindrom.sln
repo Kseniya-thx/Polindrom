@@ -14,3 +14,28 @@ Global
 		{A5E3E659-8BBD-442D-97AE-B2395E571B63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace core
+{
+    public class PolindromChecker
+    {
+        public static bool Check(string s, string word1, string word2)
+        {    
+
+            for (int i = 0; i < s.Length / 2; i++)
+            {
+                if (s[i] != s[s.Length - i - 1])
+                    return false;
+            }
+            return true;
+
+            Console.WriteLine("Bye!");
+        }
+    }
+
+}
